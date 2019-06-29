@@ -83,10 +83,10 @@ describe("Extra calculator functions", function() {
         });
 
     });
-    
+
     //----------------------------------------------Area of a Triangle
     describe("Area of Triangle Function", function() {
-        it("Should return 8", function(){
+        it("Should return 8", function() {
             expect(to2018(2000)).toBe(18);
         });
         it("Should show an alert for NaN", function() {
@@ -95,47 +95,47 @@ describe("Extra calculator functions", function() {
             expect(window.alert).toHaveBeenCalledWith("must be a number");
         });
     });
-    
+
     //----------------------------------------------Fizzbuzz
     describe("Fizzbuzz Game", function() {
-        it("Should return fizz", function(){
+        it("Should return fizz", function() {
             expect(fizzbuzz(3)).toBe("Fizz")
         });
-        it("Should return buzz", function(){
+        it("Should return buzz", function() {
             expect(fizzbuzz(5)).toBe("Buzz")
         });
-        it("Should return fizzbuzz", function(){
+        it("Should return fizzbuzz", function() {
             expect(fizzbuzz(13)).toBe("Fizz")
         });
-        it("Should return fizzbuzz", function(){
-            expect(fizzbuzz(15)).toBe("Fizz"+"Buzz")
+        it("Should return fizzbuzz", function() {
+            expect(fizzbuzz(15)).toBe("Fizz" + "Buzz")
         });
-        it("Should return fizz", function(){
+        it("Should return fizz", function() {
             expect(fizzbuzz(23)).toBe("Fizz")
         });
-        it("Should return fizz", function(){
-            expect(fizzbuzz(30)).toBe("Fizz"+"Buzz")
+        it("Should return fizz", function() {
+            expect(fizzbuzz(30)).toBe("Fizz" + "Buzz")
         });
     });
-    
-   //----------------------------------------------Drink About
-   describe("Drink Anout Challenge",function() {
-       it("Should return Age Incorrect", function(){
-           expect(whatCanIDrink(-1)).toBe("Sorry. I can't tell what drink because that age is incorrect")
-       });
-        it("Should return Drink Toddy", function(){
-           expect(whatCanIDrink(8)).toBe("Drink Toddy")
-       });
-        it("Should return Drink Coke", function(){
-           expect(whatCanIDrink(15)).toBe("Drink Coke")
-       });
-        it("Should return Drink Beer", function(){
-           expect(whatCanIDrink(19)).toBe("Drink Beer")
-       });
-        it("Should return Drink Whisky", function(){
-           expect(whatCanIDrink(50)).toBe("Drink Whisky")
-       });
-   });
 
-    
+    //----------------------------------------------Drink About
+    describe("Drink Anout Challenge", function() {
+        it("Should return Age Incorrect", function() {
+            expect(whatCanIDrink(-1)).toBe("Sorry. I can't tell what drink because that age is incorrect")
+        });
+        it("Should return Drink Toddy", function() {
+            expect(whatCanIDrink(8)).toBe("Drink Toddy")
+        });
+        it("Should return Drink Coke", function() {
+            expect(whatCanIDrink(15)).toBe("Drink Coke")
+        });
+        it("Should return Drink Beer", function() {
+            expect(whatCanIDrink(19)).toBe("Drink Beer")
+        });
+        it("Should return Drink Whisky", function() {
+            expect(whatCanIDrink(50)).toBe("Drink Whisky")
+        });
+    });
+
+
 });
